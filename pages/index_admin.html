@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEX PONTO</title>
+
+    <script src="../js/security.js"></script>
+    <link rel="stylesheet" href="../css/adminStyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <strong id="user-name"></strong>
+            <ul>
+                <li>DASHBOARD</li>
+                <li>BATER PONTO</li>
+                <li>CADASTRAR USUÁRIO</li>
+                <li>USUÁRIOS CADASTRADOS</li>
+            </ul>
+            <button id="btn-logout">Logout</button>
+        </nav>
+    </header>
+
+    <section id="dashboard"></section>
+
+    <section id="punchInOut">
+        <select name="tipo" id="tipo">
+            <option value="entrada">Entrada</option>
+            <option value="saida">Saida</option>
+        </select>
+
+        <button id="btn-punchInOut">Registrar Ponto</button>
+    </section>
+
+    <section id="newUser">
+        <h2>Cadastro de Usuários</h2>
+        <form>
+            <label for="nome">Nome:
+                <input type="text" name="nome" id="nome">
+            </label>
+            
+            <label for="sobrenome">Sobrenome:
+                <input type="text" name="sobrenome" id="sobrenome">
+            </label>
+
+            <label for="password">Senha:
+                <input type="password" name="password" id="password">
+            </label>
+
+            <label for="cpf">CPF:
+                <input type="text" name="cpf" id="cpf">
+            </label>
+
+            <button id="btn-new-user">Cadastrar</button>
+        </form>
+    </section>
+
+    <section id="users"></section>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/script_admin.js"></script>
+</body>
+</html>
